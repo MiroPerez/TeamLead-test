@@ -1,0 +1,528 @@
+* {
+    box-sizing: border-box;
+}
+
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+main {
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: start; 
+}
+
+.start__screen {
+    position: relative;
+}
+
+.product__video {
+    position: absolute;
+    top: -1%;
+    right: 0;
+    bottom: 0;
+    left: -20%;
+    z-index: -1;
+    min-height: 140%;
+    min-width: 140%;
+
+    /* display: none; */
+}
+
+.main__img {
+    width: 100%;
+}
+
+.product__name {
+    font-family: "Poppins";
+    font-weight: 800;
+    font-size: 60px;
+    text-align: center;
+    color: orange;
+    margin-bottom: 1%;
+
+}
+
+.product__info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+
+.product__img {
+    max-width: 50%;
+}
+
+.product__benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.benefits__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list__item {
+    font-family: "Nunito";
+    font-weight: 700;
+    font-size: 34px;
+    color: orange;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-shadow: 0 0 20px rgba(0,0,0,1); 
+}
+
+.ingredients__screen {
+    background: linear-gradient(#b781e9, #8a2be2, #b781e9);
+}
+
+.ingredients__block {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ingredients__list {
+    width: 15%;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ingredients__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30%;
+}
+
+.ingredients__text {
+    font-family: "Nunito";
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 10px;
+    /* color:blue; */
+}
+
+.ingredients__icon {
+    min-height: 150px;
+    min-width: 150px;
+    border: 2px solid;
+    border-radius: 50%;
+    background-image: url("../img/p_O.jpg");
+    background-size: cover;
+}
+
+.ingredients__icon:hover {
+    box-shadow: 0 0 20px rgba(0,0,0,0.5); 
+    transition: all 0.5s;
+}
+
+.ingredients__img {
+    display: flex;
+    align-items: center;
+}
+
+.reviews__screen {
+    background: linear-gradient(#b781e9, #8a2be2, #b781e9);
+}
+
+.slider__container {
+    height: 100vh;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    cursor: pointer;
+}
+
+.slider__view {
+    display: flex;
+    width: 860px;
+    overflow: hidden;
+    margin: 0 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider {
+    display: flex;
+    position: relative;
+    transform: translateX(0%);
+    transition: right 0.6s;   
+}
+
+.slide__img {
+    width: fit-content;
+}
+
+.slide {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    width: 860px;
+    margin-left: 2px;
+    margin-right: 2px;  
+}
+
+.slide__name {
+    font-family: "Nunito";
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 3%;
+}
+
+.slide__text {
+    margin-top: 3%;
+    font-family: "Nunito";
+    font-weight: 500;
+}
+
+.promo__screen {
+    background: linear-gradient(#b781e9, #8a2be2, #b781e9);
+}
+
+.promo__info {
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+.promo__img {
+    max-width: 50%;
+    border-bottom: 3px white solid;
+}
+
+.promo__text {
+    max-width: 50%;
+    font-family: "Nunito";
+    font-weight: 500;
+}
+
+.promo__benefits {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 4%;
+    align-items: center;
+    /* max-width: 80%;
+    margin-left: auto;
+    margin-right: auto; */
+}
+
+
+.countdown-title {
+    color: rgb(15, 255, 163);
+    font-weight: 500;
+    font-size: 42px;
+    text-align: center;
+    font-family: "Nunito";
+
+  }
+   
+  .countdown {
+    font-family: sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 1%;
+  }
+   
+  .countdown-number {
+    display: flex;
+  }
+   
+  .countdown-time {
+    padding: 15px;
+    border-radius: 3px;
+    background: #00816a;
+    display: flex;
+  }
+   
+  .countdown-text {
+    display: block;
+    padding-top: 5px;
+    font-size: 16px;
+  }
+
+.benefits__name {
+    font-family: "Nunito";
+    font-weight: 700;
+}
+
+.order__button {
+    padding: 8px 15px;
+    background: rgb(252, 113, 14);
+    border-radius: 5px;
+    font-family: "Nunito";
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    height: fit-content;
+    width: fit-content;
+    color: white;
+}
+
+.order__button:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+    transition: all 0.5s;
+}
+
+.order__screen {
+    background: linear-gradient(#b781e9, #8a2be2, #b781e9);
+}
+
+.order__block {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.order__info {
+    max-width: 50%;
+}
+
+.order__price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.old__price {
+    font-family: "Poppins";
+    font-weight: 800;
+    font-size: 24px;
+    text-decoration: line-through;
+}
+
+.new__price {
+    font-family: "Poppins";
+    font-weight: 800;
+    font-size: 34px;
+    text-shadow:
+    2px 2px #8a2be2;
+    
+}
+
+.order__form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+
+.order__container {
+    width: 50%;
+}
+
+.form__person {
+    position: relative;
+    width: 40%;
+}
+
+.form__tel {
+    position: relative;
+    width: 40%;
+}
+
+.form__name {
+    font-family: "Nunito";
+    font-weight: 500;
+    font-size: 18px;
+    margin-right: 1%;
+}
+
+.form__input {
+    border-radius: 5px;
+    height: 36px;
+    width: 100%;
+    outline: none;
+    border: solid 1px #d1cfcb;
+}
+
+.form__example {
+    position: absolute;
+    top:0;
+    right: -15px;
+    opacity: 0;
+    font-family: "Nunito";
+    color: black;
+    font-weight: 400;
+}
+
+.form__input:focus ~ .form__example {
+    opacity: 1;
+}
+
+@media (max-width: 1100px) {
+    .product__video {
+        top: 0%;
+        right: 0px;
+        bottom: 0;
+        left: -50%;
+        z-index: -1;
+        min-height: 100%;
+        min-width: 237%;
+    }
+
+    .product__info {
+        margin-top: 40%;
+    }
+
+    .promo__screen {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    
+    .ingredients__list {
+        z-index: 1;
+    }
+
+    .promo__text {
+        font-size: 18px;
+    }
+
+    .promo__benefits {
+        font-size: 24px;
+    }
+
+    .order__block {
+        margin-top: 35%;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .list__item {
+        font-size: 28px;
+    }
+
+    .benefits__list {
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .ingredients__img {
+        position: absolute;
+        top: 25%;
+    }
+
+    .ingredients__icon {
+        min-height: 100px;
+        min-width: 100px;
+    }
+
+    .ingredients__block {
+        position: relative;
+    }
+
+    .slide__text {
+        font-size: 14px;
+    }
+
+    .promo__text {
+        font-size: 14px;
+    }
+
+    .promo__benefits {
+        font-size: 18px;
+    }
+
+    .order__block {
+        margin-top: 0;
+        position: relative;
+    }
+
+    .order__info {
+        max-width: 100%;
+    }
+
+    .order__container {
+        position: absolute;
+        top: 50%;
+        right: 0;  
+        color: white;  
+        width: 100%;
+    }
+
+    .order__form {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .form__person {
+        width: 80%;
+    }
+    
+    .form__tel {
+        width: 80%;
+    }
+
+    .countdown-title {
+        font-size: 33px;
+        line-height: 35px;
+    }
+
+    .countdown-time {
+        padding: 8px;
+        border-radius: 0;
+    }
+
+    .countdown {
+        font-size: 16px;
+    }
+    
+    .product__name {
+        margin-bottom: 0;
+    }
+}

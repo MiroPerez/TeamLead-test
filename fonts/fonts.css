@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Nunito";
+    font-weight: 400;
+    src: url("./Nunito-Regular.ttf")
+}
+
+@font-face {
+    font-family: "Nunito";
+    font-weight: 300;
+    src: url("./Nunito-Light.ttf")
+}
+
+@font-face {
+    font-family: "Nunito";
+    font-weight: 500;
+    src: url("./Nunito-SemiBold.ttf")
+}
+
+@font-face {
+    font-family: "Nunito";
+    font-weight: 700;
+    src: url("./Nunito-Bold.ttf")
+}
+
+@font-face {
+    font-family: "Nunito";
+    font-weight: 800;
+    src: url("./Nunito-ExtraBold.ttf")
+}
+
+@font-face {
+    font-family: "Poppins";
+    font-weight: 800;
+    src: url("./Poppins-ExtraBold.ttf")
+}
